@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './Component/UI/Layout';
+import Chipss from './Pages/Chipss/Chipss';
 import Home from './Pages/Home/Home';
 import Knobs from './Pages/Knobs/Knobs';
 import MultiSelects from './Pages/MultiSelects/MultiSelects';
@@ -21,6 +22,8 @@ function App() {
           <Route path="/ratings" element={<Ratings />} />
           <Route path="/passwords" element={<Passwords />} />
           <Route path="/tree-table" element={<TreeTables />} />
+          <Route path="/chipss" element={<Chipss />} />
+
 
 
         </Route>

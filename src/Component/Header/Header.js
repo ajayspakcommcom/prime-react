@@ -13,6 +13,10 @@ const Header = (props) => {
         { label: 'Ratings', command: () => { navigate('/ratings') } },
         { label: 'Passwords', command: () => { navigate('/passwords') } },
         { label: 'Table Trees', command: () => { navigate('/tree-table') } },
+        { label: 'Chipss', command: () => { navigate('/chipss') } },
+
+
+
     ];
 
     const start = <Link to="/"><img alt="logo" src="https://primefaces.org/cdn/primereact/images/logo.png" height="40" className="mr-2" /></Link>;
