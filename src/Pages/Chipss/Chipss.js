@@ -22,9 +22,6 @@ const Chipss = (props) => {
         console.log(event.value);
     };
 
-
-
-
     return (
         <>
             <div className="card p-fluid">
