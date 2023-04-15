@@ -14,7 +14,14 @@ const Header = (props) => {
         { label: 'Passwords', command: () => { navigate('/passwords') } },
         { label: 'Table Trees', command: () => { navigate('/tree-table') } },
         { label: 'Chipss', command: () => { navigate('/chipss') } },
-        { label: 'Keyfilters', command: () => { navigate('/keyfilters') } }
+        { label: 'Keyfilters', command: () => { navigate('/keyfilters') } },
+        { label: 'Terminals', command: () => { navigate('/terminals') } },
+        { label: 'Textareas', command: () => { navigate('/textareas') } },    
+        { label: 'InputTexts', command: () => { navigate('/inputTexts') } },
+        { label: 'ToggleButtons', command: () => { navigate('/toggleButtons') } },    
+        
+
+        
     ];
 
     const start = <Link to="/"><img alt="logo" src="https://primefaces.org/cdn/primereact/images/logo.png" height="40" className="mr-2" /></Link>;
