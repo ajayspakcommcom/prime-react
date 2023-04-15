@@ -18,10 +18,9 @@ const Header = (props) => {
         { label: 'Terminals', command: () => { navigate('/terminals') } },
         { label: 'Textareas', command: () => { navigate('/textareas') } },    
         { label: 'InputTexts', command: () => { navigate('/inputTexts') } },
-        { label: 'ToggleButtons', command: () => { navigate('/toggleButtons') } },    
-        
-
-        
+        { label: 'ToggleButtons', command: () => { navigate('/toggleButtons') } },
+        { label: 'Sliders', command: () => { navigate('/sliders') } },
+        { label: 'DataTables', command: () => { navigate('/dataTables') } }    
     ];
 
     const start = <Link to="/"><img alt="logo" src="https://primefaces.org/cdn/primereact/images/logo.png" height="40" className="mr-2" /></Link>;

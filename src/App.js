@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './Component/UI/Layout';
 import Chipss from './Pages/Chipss/Chipss';
+import DataTables from './Pages/DataTables/DataTables';
 import Home from './Pages/Home/Home';
 import InputTexts from './Pages/InputTexts/InputTexts';
 import KeyFilters from './Pages/KeyFilters/KeyFilters';
@@ -9,6 +10,7 @@ import Knobs from './Pages/Knobs/Knobs';
 import MultiSelects from './Pages/MultiSelects/MultiSelects';
 import Passwords from './Pages/Passwords/Passwords';
 import Ratings from './Pages/Ratings/Ratings';
+import Sliders from './Pages/Sliders/Sliders';
 import Terminals from './Pages/Terminals/Terminals';
 import Textareas from './Pages/Textareas/Textareas';
 import ToggleButtons from './Pages/ToggleButtons/ToggleButtons';
@@ -33,6 +35,8 @@ function App() {
           <Route path="/textareas" element={<Textareas />} />
           <Route path="/inputTexts" element={<InputTexts />} />
           <Route path="/toggleButtons" element={<ToggleButtons />} />
+          <Route path="/sliders" element={<Sliders />} />
+          <Route path="/dataTables" element={<DataTables />} />
           
           
           
