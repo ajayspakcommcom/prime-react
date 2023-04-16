@@ -63,7 +63,7 @@ const DataTableTemplate = (props) => {
 
     return (
         <Card>
-            <DataTable value={products} header={header} footer={footer} stripedRows paginator rows={5} rowsPerPageOptions={[5, 10, 25, 50]}>
+            <DataTable value={products} header={header} footer={footer} stripedRows >
                 <Column field="name" header="Name"></Column>
                 <Column header="Image" body={imageBodyTemplate}></Column>
                 <Column field="price" header="Price" body={priceBodyTemplate}></Column>

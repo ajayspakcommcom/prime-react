@@ -27,7 +27,7 @@ const DataTableDynamicColumn = (props) => {
     return (
         <Card>
             <h2>Dynamic Column</h2>
-            <DataTable value={products} paginator rows={5} rowsPerPageOptions={[5, 10, 25, 50]}>
+            <DataTable value={products}>
                 {columns.map((col, i) => (
                     <Column key={col.field} field={col.field} header={col.header} />
                 ))}

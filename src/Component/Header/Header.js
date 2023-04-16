@@ -20,7 +20,14 @@ const Header = (props) => {
         { label: 'InputTexts', command: () => { navigate('/inputTexts') } },
         { label: 'ToggleButtons', command: () => { navigate('/toggleButtons') } },
         { label: 'Sliders', command: () => { navigate('/sliders') } },
-        { label: 'DataTables', command: () => { navigate('/dataTables') } }    
+        { label: 'DataTables', command: () => { navigate('/dataTables') } },
+        { label: 'Flex', command: () => { navigate('/flex') } },
+        { label: 'Toasts', command: () => { navigate('/toasts') } },
+        { label: 'Calendars', command: () => { navigate('/calendars') } },
+
+        
+        
+        
     ];
 
     const start = <Link to="/"><img alt="logo" src="https://primefaces.org/cdn/primereact/images/logo.png" height="40" className="mr-2" /></Link>;

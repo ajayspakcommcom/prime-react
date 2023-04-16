@@ -19,11 +19,11 @@ const DataTableBasic = (props) => {
     return (
         <Card>
             <h2>Basic</h2>
-            <DataTable value={products} paginator rows={5} rowsPerPageOptions={[5, 10, 25, 50]}>
-                <Column field="code" header="Code" sortable></Column>
-                <Column field="name" header="Name" sortable></Column>
-                <Column field="category" header="Category" sortable></Column>
-                <Column field="quantity" header="Quantity" sortable></Column>
+            <DataTable value={products}>
+                <Column field="code" header="Code"></Column>
+                <Column field="name" header="Name"></Column>
+                <Column field="category" header="Category"></Column>
+                <Column field="quantity" header="Quantity"></Column>
             </DataTable>
         </Card>
     );

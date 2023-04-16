@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './Component/UI/Layout';
+import Calendars from './Pages/Calendars/Calendars';
 import Chipss from './Pages/Chipss/Chipss';
 import DataTables from './Pages/DataTables/DataTables';
+import Flex from './Pages/Flex/Flex';
 import Home from './Pages/Home/Home';
 import InputTexts from './Pages/InputTexts/InputTexts';
 import KeyFilters from './Pages/KeyFilters/KeyFilters';
@@ -13,6 +15,7 @@ import Ratings from './Pages/Ratings/Ratings';
 import Sliders from './Pages/Sliders/Sliders';
 import Terminals from './Pages/Terminals/Terminals';
 import Textareas from './Pages/Textareas/Textareas';
+import Toasts from './Pages/Toasts/Toasts';
 import ToggleButtons from './Pages/ToggleButtons/ToggleButtons';
 import TreeTables from './Pages/TreeTables/TreeTables';
 
@@ -37,6 +40,9 @@ function App() {
           <Route path="/toggleButtons" element={<ToggleButtons />} />
           <Route path="/sliders" element={<Sliders />} />
           <Route path="/dataTables" element={<DataTables />} />
+          <Route path="/flex" element={<Flex />} />
+          <Route path="/toasts" element={<Toasts />} />
+          <Route path="/calendars" element={<Calendars />} />
           
           
           
