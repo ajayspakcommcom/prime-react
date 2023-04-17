@@ -16,7 +16,7 @@ const Header = (props) => {
         { label: 'Chipss', command: () => { navigate('/chipss') } },
         { label: 'Keyfilters', command: () => { navigate('/keyfilters') } },
         { label: 'Terminals', command: () => { navigate('/terminals') } },
-        { label: 'Textareas', command: () => { navigate('/textareas') } },    
+        { label: 'Textareas', command: () => { navigate('/textareas') } },
         { label: 'InputTexts', command: () => { navigate('/inputTexts') } },
         { label: 'ToggleButtons', command: () => { navigate('/toggleButtons') } },
         { label: 'Sliders', command: () => { navigate('/sliders') } },
@@ -24,10 +24,13 @@ const Header = (props) => {
         { label: 'Flex', command: () => { navigate('/flex') } },
         { label: 'Toasts', command: () => { navigate('/toasts') } },
         { label: 'Calendars', command: () => { navigate('/calendars') } },
+        { label: 'Cards', command: () => { navigate('/cards') } },
 
-        
-        
-        
+
+
+
+
+
     ];
 
     const start = <Link to="/"><img alt="logo" src="https://primefaces.org/cdn/primereact/images/logo.png" height="40" className="mr-2" /></Link>;

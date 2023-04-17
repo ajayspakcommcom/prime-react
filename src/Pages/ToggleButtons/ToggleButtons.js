@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { ToggleButton } from 'primereact/togglebutton';
 
-const ToggleButtons = (props) => { 
+const ToggleButtons = (props) => {
     const [checked, setChecked] = useState(false);
     const [checked1, setChecked1] = useState(false);
 
@@ -10,7 +10,7 @@ const ToggleButtons = (props) => {
     return (
         <>
             <ToggleButton checked={checked} onChange={(e) => { setChecked(e.value); console.log(e.target.value); }} />
-            <div className="card flex justify-content-center">
+            <div className="card">
                 <ToggleButton
                     onLabel="I confirm"
                     offLabel="I reject"
@@ -18,7 +18,6 @@ const ToggleButtons = (props) => {
                     offIcon="pi pi-times"
                     checked={checked1}
                     onChange={(e) => { setChecked1(e.value); console.log(e.target.value); }}
-                    className="w-9rem"
                     onFocus={(e) => { console.log(e) }}
                     onBlur={(e) => { console.log(e) }}
                 />

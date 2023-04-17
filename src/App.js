@@ -19,6 +19,7 @@ import Textareas from './Pages/Textareas/Textareas';
 import Toasts from './Pages/Toasts/Toasts';
 import ToggleButtons from './Pages/ToggleButtons/ToggleButtons';
 import TreeTables from './Pages/TreeTables/TreeTables';
+import Cards from './Pages/Cards/Cards';
 
 
 function App() {
@@ -44,6 +45,9 @@ function App() {
           <Route path="/flex" element={<Flex />} />
           <Route path="/toasts" element={<Toasts />} />
           <Route path="/calendars" element={<Calendars />} />
+          <Route path="/cards" element={<Cards />} />
+
+
         </Route>
       </Routes>
     </BrowserRouter>
