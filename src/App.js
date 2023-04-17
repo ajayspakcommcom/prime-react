@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './Component/UI/Layout';
 import Calendars from './Pages/Calendars/Calendars';
@@ -43,10 +44,6 @@ function App() {
           <Route path="/flex" element={<Flex />} />
           <Route path="/toasts" element={<Toasts />} />
           <Route path="/calendars" element={<Calendars />} />
-          
-          
-          
-          
         </Route>
       </Routes>
     </BrowserRouter>
