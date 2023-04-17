@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Calendar } from 'primereact/calendar';
 
-const CalendarBasic = (props) => { 
+const CalendarBasic = (props) => {
 
     let today = new Date();
     let month = today.getMonth();
@@ -11,8 +11,6 @@ const CalendarBasic = (props) => {
     let nextMonth = month === 11 ? 0 : month + 1;
     let nextYear = nextMonth === 0 ? year + 1 : year;
 
-
-    
 
     const [date, setDate] = useState(null);
     const [date1, setDate1] = useState(null);
@@ -30,11 +28,11 @@ const CalendarBasic = (props) => {
     maxDate.setFullYear(nextYear);
 
 
-    const onDateChangeHandler = (event) => { 
+    const onDateChangeHandler = (event) => {
         setDate(event.value);
     };
 
-    const getMultipleDate = (event) => { 
+    const getMultipleDate = (event) => {
         setDates(event.value);
         console.log(event.value);
     };
@@ -52,7 +50,7 @@ const CalendarBasic = (props) => {
                 <Calendar placeholder="Basic Date Format" value={date} onChange={onDateChangeHandler} dateFormat="dd/mm/yy" />
                 <Calendar placeholder="Icon" value={date} onChange={onDateChangeHandler} showIcon />
                 <Calendar placeholder="Min Max" value={date} onChange={onDateChangeHandler} minDate={minDate} maxDate={maxDate} readOnlyInput />
-                <Calendar placeholder="Multiple" value={dates} onChange={getMultipleDate} selectionMode="multiple" readOnlyInput />    
+                <Calendar placeholder="Multiple" value={dates} onChange={getMultipleDate} selectionMode="multiple" readOnlyInput />
                 <Calendar placeholder="Range" value={dates} onChange={(e) => { setDates(e.value); console.log(e.value); }} selectionMode="range" readOnlyInput />
                 <Calendar placeholder="Button Bar" value={date} onChange={(e) => { setDate(e.value); console.log(e.value); }} showButtonBar />
                 <Calendar placeholder="Month Picker" value={date} onChange={(e) => { setDate(e.value); console.log(e.value); }} view="month" dateFormat="mm/yy" />

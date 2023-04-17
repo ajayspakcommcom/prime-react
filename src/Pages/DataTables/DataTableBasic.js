@@ -15,7 +15,6 @@ const DataTableBasic = (props) => {
     }, []);
 
 
-
     return (
         <Card>
             <h2>Basic</h2>
