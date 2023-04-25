@@ -22,6 +22,7 @@ import TreeTables from './Pages/TreeTables/TreeTables';
 import Cards from './Pages/Cards/Cards';
 
 
+
 function App() {
 
   return (
@@ -46,7 +47,6 @@ function App() {
           <Route path="/toasts" element={<Toasts />} />
           <Route path="/calendars" element={<Calendars />} />
           <Route path="/cards" element={<Cards />} />
-
 
         </Route>
       </Routes>

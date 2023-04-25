@@ -8,7 +8,7 @@ const Knobs = (props) => {
     const [value, setValue] = useState(0);
     const [value1, setValue1] = useState(0);
 
-    const knobHanlder = (e) => { 
+    const knobHanlder = (e) => {
         console.log(e);
         setValue(e.value);
     };

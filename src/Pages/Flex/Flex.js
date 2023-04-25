@@ -1,13 +1,26 @@
-
+import { Button } from "primereact/button";
+import { Card } from "primereact/card";
+import React, { useState } from 'react';
+import FlexLayout from "./FlexLayout";
+import Spacing from "./Spacing";
+import Typography from "./Typography";
 
 const Flex = (props) => {
+
+    const [isVisible, setIsVisible] = useState('layout');
+
     return (
         <>
-            <div className="card">
-                <div className="flex flex-wrap align-items-center justify-content-center card-container blue-container">
-                    <div className="fadeinleft animation-iteration-1 animation-iteration-infinite flex align-items-center justify-content-center font-bold bg-blue-500 text-white border-round m-2 px-5 py-3">fadeinleft</div>
+            <Card>
+                <div className="grid p-2">
+                    <div className="col"><Button label="Display" onClick={() => { setIsVisible('layout') }} /></div>
+                    <div className="col"><Button label="Typography" onClick={() => { setIsVisible('typography') }} /></div>
+                    <div className="col"><Button label="Spacing" onClick={() => { setIsVisible('spacing') }} /></div>
                 </div>
-            </div>
+                {isVisible === 'layout' && <FlexLayout />}
+                {isVisible === 'typography' && <Typography />}
+                {isVisible === 'spacing' && <Spacing />}
+            </Card>
         </>
     );
 };
