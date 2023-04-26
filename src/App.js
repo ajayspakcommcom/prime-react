@@ -20,6 +20,9 @@ import Toasts from './Pages/Toasts/Toasts';
 import ToggleButtons from './Pages/ToggleButtons/ToggleButtons';
 import TreeTables from './Pages/TreeTables/TreeTables';
 import Cards from './Pages/Cards/Cards';
+import Product from './Pages/Products/Product';
+import ProductItem from './Pages/Products/ProductItem';
+
 
 
 
@@ -47,7 +50,9 @@ function App() {
           <Route path="/toasts" element={<Toasts />} />
           <Route path="/calendars" element={<Calendars />} />
           <Route path="/cards" element={<Cards />} />
-
+          <Route path="/product" element={<Product />} />
+          <Route path="/product/:id" element={<ProductItem />} />
+          
         </Route>
       </Routes>
     </BrowserRouter>
