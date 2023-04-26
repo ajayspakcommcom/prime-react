@@ -22,6 +22,7 @@ import TreeTables from './Pages/TreeTables/TreeTables';
 import Cards from './Pages/Cards/Cards';
 import Product from './Pages/Products/Product';
 import ProductItem from './Pages/Products/ProductItem';
+import ProductFilter from './Pages/Products/ProductFilter';
 
 
 
@@ -52,6 +53,8 @@ function App() {
           <Route path="/cards" element={<Cards />} />
           <Route path="/product" element={<Product />} />
           <Route path="/product/:id" element={<ProductItem />} />
+          <Route path="/productfilter" element={<ProductFilter />} />
+
           
         </Route>
       </Routes>
