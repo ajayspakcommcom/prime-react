@@ -23,6 +23,10 @@ import Cards from './Pages/Cards/Cards';
 import Product from './Pages/Products/Product';
 import ProductItem from './Pages/Products/ProductItem';
 import ProductFilter from './Pages/Products/ProductFilter';
+import Uploads from './Pages/Uploads/Uploads';
+import Messages from './Pages/Messages/Messages';
+import Stepss from './Pages/Steps/Stepss';
+import UseStorages from './Pages/UseStorages/UseStorages';
 
 
 
@@ -54,8 +58,17 @@ function App() {
           <Route path="/product" element={<Product />} />
           <Route path="/product/:id" element={<ProductItem />} />
           <Route path="/productfilter" element={<ProductFilter />} />
+          <Route path="/uploads" element={<Uploads />} />
+          <Route path="/messages" element={<Messages />} />
+          <Route path="/steps" element={<Stepss />} />
+          <Route path="/usestorages" element={<UseStorages />} />
 
-          
+
+
+
+
+
+
         </Route>
       </Routes>
     </BrowserRouter>

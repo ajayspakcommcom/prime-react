@@ -9,10 +9,10 @@ import { ProductService } from './Service/ProductService';
 const DataTableEditRow = (props) => {
 
     const [products, setProducts] = useState(null);
-    
+
     useEffect(() => {
         ProductService.getProductsMini().then((data) => setProducts(data));
-    }, []); 
+    }, []);
 
 
     const onRowEditComplete = (e) => {
@@ -23,7 +23,7 @@ const DataTableEditRow = (props) => {
     };
 
     const textEditor = (options) => {
-        return <InputText type="text" value={options.value} onChange={(e) => {options.editorCallback(e.target.value)}} />;
+        return <InputText type="text" value={options.value} onChange={(e) => { options.editorCallback(e.target.value) }} />;
     };
 
     return (

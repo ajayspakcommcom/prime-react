@@ -27,8 +27,17 @@ const Header = (props) => {
         { label: 'Cards', command: () => { navigate('/cards') } },
         { label: 'Product', command: () => { navigate('/product') } },
         { label: 'Product Filter', command: () => { navigate('/productfilter') } },
+        { label: 'Uploads', command: () => { navigate('/uploads') } },
+        { label: 'Messages', command: () => { navigate('/messages') } },
+        { label: 'Steps', command: () => { navigate('/steps') } },
+        { label: 'UseStorages', command: () => { navigate('/usestorages') } },
 
-        
+
+
+
+
+
+
     ];
 
     const start = <Link to="/"><img alt="logo" src="https://primefaces.org/cdn/primereact/images/logo.png" height="40" className="mr-2" /></Link>;
